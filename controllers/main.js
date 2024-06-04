@@ -29,7 +29,6 @@ const dashboard = async (req, res) => {
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    console.log(decoded);
 
     const luckyNumber = Math.floor(Math.random() * 100);
 
